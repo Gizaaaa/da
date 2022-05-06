@@ -55,6 +55,7 @@ local theme = {
     inline = Color3.fromRGB(50, 50, 50),
     textcolor = Color3.fromRGB(255, 255, 255),
     textborder = Color3.fromRGB(0, 0, 0),
+    cursoroutline = Color3.fromRGB(10, 10, 10),
     font = 2,
     textsize = 13
 }
@@ -3992,6 +3993,7 @@ end
     visuals_allies:Toggle({name = "Draw Boxes", def = true})
     visuals_allies:Toggle({name = "Draw Names", def = true})
     visuals_allies:Toggle({name = "Draw Health", def = true})
+
     --
     visuals_miscellaneous:Toggle({name = "Draw Field Of View"})
     visuals_miscellaneous:Toggle({name = "Draw Server Position"})
@@ -4027,3 +4029,4 @@ end
     lib:Initialize()
 end]]
 --
+return library, utility, library.pointers, theme
